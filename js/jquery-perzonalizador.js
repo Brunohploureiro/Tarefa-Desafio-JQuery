@@ -26,4 +26,24 @@ $(document).ready(function(){
     $('#modal-info').modal('show')
 
   })
+   $('#navbar-click').click(function() {
+                if (!$('.nav').hasClass('open')) {
+                    openMenu();
+                } else {
+                    closeMenu();
+                }
+            });
+
+            function openMenu(){
+                $(function(){
+                   
+                    $('.nav').addClass('open').show(300);
+                });
+            }
+            function closeMenu(){
+                $(function(){
+                    
+                    $('.nav').removeClass('open').hide(300);
+                });
+            }
 })
